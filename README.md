@@ -69,7 +69,7 @@ Aqui está um mapa de todas as classes e interfaces disponíveis no framework:
 
 ## Requisitos
 
-* PHP >= 8.2
+* PHP >= 8.4
 
 ## Instalação
 
