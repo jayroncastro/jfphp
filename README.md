@@ -9,7 +9,7 @@ Um micro-framework PHP com componentes modernos, fortemente tipados e reutilizá
 
 ## Visão Geral
 
-O JFPHP nasceu da necessidade de ter um conjunto de ferramentas padronizadas e modernas para lidar com tarefas comuns do desenvolvimento PHP, como a manipulação de coleções de dados e o tratamento de requisições HTTP. O framework é construído com as funcionalidades mais recentes do PHP 8.2+, incluindo `Enums`, classes `readonly` e tipagem estrita para máxima segurança e performance.
+O JFPHP nasceu da necessidade de ter um conjunto de ferramentas padronizadas e modernas para lidar com tarefas comuns do desenvolvimento PHP, como a manipulação de coleções de dados e o tratamento de requisições HTTP. O framework é construído com as funcionalidades mais recentes do PHP 8.4+, incluindo `Enums`, classes `readonly` e tipagem estrita para máxima segurança e performance.
 
 ## Principais Funcionalidades
 
