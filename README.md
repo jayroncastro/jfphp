@@ -1,6 +1,6 @@
 # JFPHP Framework
 
-![PHP Version](https://img.shields.io/badge/php-%3E%3D8.2-8892BF.svg)
+![PHP Version](https://img.shields.io/badge/php-%3E%3D8.4-8892BF.svg)
 ![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)
 
 Um micro-framework PHP com componentes modernos, fortemente tipados e reutilizáveis, projetado para acelerar o desenvolvimento de projetos com código limpo e robusto.
