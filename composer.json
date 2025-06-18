@@ -1,0 +1,20 @@
+{
+    "name": "jayroncastro/jfphp",
+    "description": "Small PHP Framework for use in specific projects",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "jayroncastro\\jfphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jayron Castro",
+            "email": "jayroncastro@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.4"
+    }
+}
