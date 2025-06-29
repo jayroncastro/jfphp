@@ -100,4 +100,13 @@ class Request {
         parse_str( $body, $parsedData );
         return $parsedData;
     }
+
+    /**
+     * Checks if a parameter exists in the request.
+     * @param string $paramName The name of the parameter to be checked.
+     * @return bool Returns `true` if the parameter exists, even if its value is null.
+     */
+    public function has( string $paramName ): bool {
+        return array_key_exists( $paramName, $this->data );
+    }
 }
