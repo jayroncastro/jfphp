@@ -21,6 +21,7 @@ use jayroncastro\jfphp\lang\ValueObject;
  * @since 1.0
  * @version 1.0
  * @final
+ * @readonly
  */
 final readonly class UrlResult extends ValueObject implements RequestResult {
 

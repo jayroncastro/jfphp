@@ -13,7 +13,7 @@ use jayroncastro\jfphp\lang\ValueObject;
 
 /**
  * Implementation of `RequestResult` that immutably encapsulates a
- * value that has been sanitized and validated as a `e-Mail`.
+ * value that has been sanitized and validated as an ` e-Mail `.
  * @extends ValueObject
  * @implements RequestResult
  * @package jayroncastro
@@ -21,6 +21,7 @@ use jayroncastro\jfphp\lang\ValueObject;
  * @since 1.0
  * @version 1.0
  * @final
+ * @readonly
  */
 final readonly class EmailResult extends ValueObject implements RequestResult {
 

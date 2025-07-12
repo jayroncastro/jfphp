@@ -17,8 +17,9 @@ namespace jayroncastro\jfphp\http;
  * @subpackage jfphp/http
  * @since 1.0.0
  * @version 1.0.0
+ * @final
  */
-class Request {
+final class Request {
 
     /**
      * The sanitizer object that will be used to sanitize the data.

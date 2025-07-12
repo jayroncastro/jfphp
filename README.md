@@ -88,7 +88,7 @@ O sistema de coleções fornece uma API fluente e poderosa para manipular arrays
 **Exemplo com `ArrayList`:**
 
 ```php
-use jayroncastro\jfphp\ArrayList;
+use jayroncastro\jfphp\collections\ArrayList;
 
 $lista = new ArrayList(['PHP', 'JavaScript']);
 $lista->add('Python');
@@ -96,8 +96,9 @@ $lista->add('Python');
 ```
 
 **Exemplo com `HashSet`:**
+
 ```php
-use jayroncastro\jfphp\HashSet;
+use jayroncastro\jfphp\collections\HashSet;
 
 $set = new HashSet();
 $set->add('vermelho'); // true (adicionado)

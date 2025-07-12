@@ -6,19 +6,18 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  * @link https://github.com/jayroncastro/jfphp
  */
-namespace jayroncastro\jfphp;
+namespace jayroncastro\jfphp\collections;
 
 use Iterator;
 use jayroncastro\jfphp\exception\IndexOutOfBoundsException;
 use jayroncastro\jfphp\exception\NoSuchElementException;
-use ReturnTypeWillChange;
 
 /**
  * An iterator for lists that allows you to traverse the list in any
  * direction, modify the list during iteration, and get the current
  * position of the iterator.
  * @package jayroncastro
- * @subpackage jfphp
+ * @subpackage jfphp/collections
  * @template TValue The type of value the iterator iterates through.
  * @extends Iterator<int, TValue>
  * @since 1.0.0
