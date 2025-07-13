@@ -6,9 +6,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  * @link https://github.com/jayroncastro/jfphp
  */
-namespace jayroncastro\jfphp;
-
-use jayroncastro\jfphp\AbstractSet;
+namespace jayroncastro\jfphp\collections;
 
 /**
  * Implementation of `SetInterface` based on a hash table (array).
@@ -17,10 +15,10 @@ use jayroncastro\jfphp\AbstractSet;
  * @template TValue
  * @extends AbstractSet<TValue>
  * @package jayroncastro
- * @subpackage jfphp
+ * @subpackage jfphp/collections
  * @since 1.0.0
  * @version 1.0.0
  */
-class HashSet extends AbstractSet {
+final class HashSet extends AbstractSet {
     // No additional logic is needed here for the base functionality.
 }

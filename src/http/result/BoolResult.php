@@ -20,7 +20,6 @@ use jayroncastro\jfphp\lang\ValueObject;
  * @subpackage jfphp/http/result
  * @since 1.0
  * @version 1.0
- * @final
  */
 final readonly class BoolResult extends ValueObject implements RequestResult {
 

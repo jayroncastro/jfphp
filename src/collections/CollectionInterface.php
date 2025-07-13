@@ -6,7 +6,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  * @link https://github.com/jayroncastro/jfphp
  */
-namespace jayroncastro\jfphp;
+namespace jayroncastro\jfphp\collections;
 
 use Countable;
 use IteratorAggregate;
@@ -19,7 +19,7 @@ use Traversable;
  * @extends IteratorAggregate
  * @extends Countable
  * @package jayroncastro
- * @subpackage jfphp
+ * @subpackage jfphp/collections
  * @since 1.0.0
  * @version 1.0.0
  */

@@ -18,7 +18,6 @@ use jayroncastro\jfphp\http\enums\DataType;
  * @subpackage jfphp/http
  * @since 1.0.0
  * @version 1.0.0
- * @final
  */
 final readonly class RequestParams {
 

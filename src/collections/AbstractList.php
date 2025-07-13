@@ -6,11 +6,9 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  * @link https://github.com/jayroncastro/jfphp
  */
-namespace jayroncastro\jfphp;
+namespace jayroncastro\jfphp\collections;
 
-use jayroncastro\jfphp\AbstractCollection;
 use jayroncastro\jfphp\exception\IndexOutOfBoundsException;
-use jayroncastro\jfphp\ListInterface;
 
 /**
  * This abstract class extends `AbstractCollection` and implements
@@ -21,7 +19,7 @@ use jayroncastro\jfphp\ListInterface;
  * @implements ListInterface<TValue>
  * @extends AbstractCollection
  * @package jayroncastro
- * @subpackage jfphp
+ * @subpackage jfphp/collections
  * @since 1.0.0
  * @version 1.0.0
  */

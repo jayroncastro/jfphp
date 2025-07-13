@@ -6,10 +6,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  * @link https://github.com/jayroncastro/jfphp
  */
-namespace jayroncastro\jfphp;
-
-use jayroncastro\jfphp\AbstractCollection;
-use jayroncastro\jfphp\SetInterface;
+namespace jayroncastro\jfphp\collections;
 
 /**
  * This abstract class provides the base implementation for
@@ -19,7 +16,7 @@ use jayroncastro\jfphp\SetInterface;
  * @implements SetInterface
  * @extends AbstractCollection<TValue>
  * @package jayroncastro
- * @subpackage jfphp
+ * @subpackage jfphp/collections
  * @since 1.0.0
  * @version 1.0.0
  */

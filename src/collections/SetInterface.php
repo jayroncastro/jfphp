@@ -6,14 +6,14 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  * @link https://github.com/jayroncastro/jfphp
  */
-namespace jayroncastro\jfphp;
+namespace jayroncastro\jfphp\collections;
 
 /**
  * Defines the contract for a collection that guarantees the
  * uniqueness of its elements, extending `CollectionInterface`
  * to enforce a logic that does not allow duplicates.
  * @package jayroncastro
- * @subpackage jfphp
+ * @subpackage jfphp/collections
  * @template TValue
  * @extends CollectionInterface<TValue>
  * @since 1.0.0

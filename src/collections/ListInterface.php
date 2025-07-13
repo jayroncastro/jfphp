@@ -6,7 +6,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  * @link https://github.com/jayroncastro/jfphp
  */
-namespace jayroncastro\jfphp;
+namespace jayroncastro\jfphp\collections;
 
 use jayroncastro\jfphp\exception\IndexOutOfBoundsException;
 
@@ -16,7 +16,7 @@ use jayroncastro\jfphp\exception\IndexOutOfBoundsException;
  * accessed by their integer index, that is, their position in the list,
  * as well as iterating over the elements in the list.
  * @package jayroncastro
- * @subpackage jfphp
+ * @subpackage jfphp/collections
  * @template TValue The type of value the list stores.
  * @extends CollectionInterface<TValue>
  * @since 1.0.0
