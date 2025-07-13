@@ -18,7 +18,7 @@ use jayroncastro\jfphp\http\validation\ValidatorInterface;
  * @package jayroncastro
  * @subpackage jfphp/http
  * @since 1.0.0
- * @version 1.0.0
+ * @version 2.0.0
  */
 final class Request {
 
@@ -120,13 +120,13 @@ final class Request {
      * @param ValidatorInterface[] $validators This parameter receives an
      * array of validator objects.
      * @return $this Returns the Request instance itself for chaining.
-     * @since 1.3.0
-     * @version 1.3.0
+     * @since 2.0.0
+     * @version 2.0.0
      */
     public function validate( array $validators ): self {
         foreach ( $validators as $validator ) {
             if ( $validator instanceof ValidatorInterface ) {
-                $validator->validate();
+                $validator->validate( $this );
             }
         }
         return $this;
