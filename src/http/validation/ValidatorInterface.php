@@ -9,6 +9,7 @@
 namespace jayroncastro\jfphp\http\validation;
 
 use jayroncastro\jfphp\exception\ValidationException;
+use jayroncastro\jfphp\http\Request;
 
 /**
  * This interface defines the contract for classes that validate
@@ -16,14 +17,16 @@ use jayroncastro\jfphp\exception\ValidationException;
  * @package jayroncastro
  * @subpackage jfphp/http/validation
  * @since 1.0.0
- * @version 1.0.0
+ * @version 2.0.0
  */
 interface ValidatorInterface {
 
     /**
      * This method executes the validation logic.
+     * @param Request $request The current request instance.
      * @return void
      * @throws ValidationException If validation fails.
+     * @since 2.0.0
      */
-    public function validate(): void;
+    public function validate( Request $request ): void;
 }
