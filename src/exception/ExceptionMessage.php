@@ -20,6 +20,7 @@ enum ExceptionMessage: string {
     case INDEX_OUT_OF_BOUNDS = 'The index provided is outside the allowed range, it must be: (index < 0 || index >= size())';
     case ILLEGAL_STATE = 'This operation cannot be performed at the current state of the iterator.';
     case NO_SUCH_ELEMENT = 'There is no such element to be returned by the iterator.';
+    case VALIDATION_FAILED = 'The request did not pass the required validation checks.';
     case GENERIC_ERROR = 'A generic error occurred.';
     // Adicione outros casos conforme necessário
 }
