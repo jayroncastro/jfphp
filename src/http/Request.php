@@ -17,7 +17,6 @@ namespace jayroncastro\jfphp\http;
  * @subpackage jfphp/http
  * @since 1.0.0
  * @version 1.0.0
- * @final
  */
 final class Request {
 
@@ -106,6 +105,8 @@ final class Request {
      * Checks if a parameter exists in the request.
      * @param string $paramName The name of the parameter to be checked.
      * @return bool Returns `true` if the parameter exists, even if its value is null.
+     * @since 1.1.0
+     * @version 1.1.0
      */
     public function has( string $paramName ): bool {
         return array_key_exists( $paramName, $this->data );

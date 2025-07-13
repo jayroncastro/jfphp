@@ -22,7 +22,6 @@ use jayroncastro\jfphp\exception\NoSuchElementException;
  * @subpackage jfphp/collections
  * @since 1.0.0
  * @version 1.0.0
- * @final
  */
 final class ArrayListIterator implements ListIteratorInterface {
 

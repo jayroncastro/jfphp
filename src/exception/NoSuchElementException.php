@@ -17,7 +17,6 @@ use RuntimeException;
  * @extends RuntimeException
  * @since 1.0.0
  * @version 1.0.0
- * @final
  */
 final class NoSuchElementException extends RuntimeException {
 

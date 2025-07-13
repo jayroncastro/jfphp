@@ -20,8 +20,6 @@ use jayroncastro\jfphp\lang\ValueObject;
  * @subpackage jfphp/http/result
  * @since 1.0
  * @version 1.0
- * @final
- * @readonly
  */
 final readonly class StringResult extends ValueObject implements RequestResult {
 

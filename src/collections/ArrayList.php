@@ -17,7 +17,6 @@ namespace jayroncastro\jfphp\collections;
  * @subpackage jfphp/collections
  * @since 1.0.0
  * @version 1.0.0
- * @final
  */
 final class ArrayList extends AbstractList {
 
