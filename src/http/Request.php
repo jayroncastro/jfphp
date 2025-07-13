@@ -8,6 +8,8 @@
  */
 namespace jayroncastro\jfphp\http;
 
+use jayroncastro\jfphp\http\validation\ValidatorInterface;
+
 /**
  * This class orchestrates the receipt of data from HTTP requests,
  * providing a unified API for securely accessing parameters,
@@ -110,5 +112,23 @@ final class Request {
      */
     public function has( string $paramName ): bool {
         return array_key_exists( $paramName, $this->data );
+    }
+
+    /**
+     * This method runs a series of validators on the request and throws
+     * an exception if any of the validators fail.
+     * @param ValidatorInterface[] $validators This parameter receives an
+     * array of validator objects.
+     * @return $this Returns the Request instance itself for chaining.
+     * @since 1.3.0
+     * @version 1.3.0
+     */
+    public function validate( array $validators ): self {
+        foreach ( $validators as $validator ) {
+            if ( $validator instanceof ValidatorInterface ) {
+                $validator->validate();
+            }
+        }
+        return $this;
     }
 }
