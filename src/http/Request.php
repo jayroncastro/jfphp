@@ -8,6 +8,7 @@
  */
 namespace jayroncastro\jfphp\http;
 
+use jayroncastro\jfphp\http\enums\DataType;
 use jayroncastro\jfphp\http\validation\ValidatorInterface;
 
 /**
@@ -53,7 +54,7 @@ final class Request {
     /**
      * Returns a specific request parameter, already sanitized and encapsulated.
      * @param RequestParams $params Object describing the desired parameter.
-     * @return RequestResult Returns a result object with type (e.g. `StringResult`).
+     * @return RequestResult Returns a result object with a type (e.g. `StringResult`).
      */
     public function getParam( RequestParams $params ): RequestResult {
         $rawValue = $this->data[ $params->paramName ] ?? $params->defaultValue;
@@ -130,5 +131,28 @@ final class Request {
             }
         }
         return $this;
+    }
+
+    /**
+     * This method is a shortcut to fetch, sanitize and return the
+     * value of a single parameter; it serves to simplify the call to
+     * getParam, hiding the need to instantiate a RequestParams for
+     * simple use cases.
+     * @param string $paramName The name of the parameter in the request.
+     * @param DataType $dataType The expected data type.
+     * @param mixed|null $defaultValue
+     * @return mixed The final, sanitized value.
+     * @since 2.0.0
+     */
+    public function input(string $paramName,
+                          DataType $dataType = DataType::STRING,
+                          mixed $defaultValue = null): mixed {
+
+        $params = new RequestParams(
+            paramName: $paramName,
+            dataType: $dataType,
+            defaultValue: $defaultValue
+        );
+        return $this->getParam( $params )->getValue();
     }
 }
